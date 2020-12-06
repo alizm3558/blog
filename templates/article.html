@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    {% if article %}
+        <h4>{{article.title}}</h4>
+        <hr>
+
+        Yazar: {{article.author}}
+        <hr>
+        Tarih: {{article.created_date}}
+        <hr>
+        <div class="jumbotron">
+        {{article.content|safe}} <!--: img linkini aktive eder-->
+        </div>
+    {% else %}
+    <div class="alert alert-warning">
+        Böyle bir makale bulunmamaktadır.
+    </div>
+    {% endif %}
+
+
+{% endblock  %}
+
+

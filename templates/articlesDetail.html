@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    <h3>{{article.title}}</h3>
+    <hr>
+    <h6>Yazar: {{article.author}}</h6>
+    <br>
+    <div class="jumbotron">
+            {{article.content|safe}}
+    </div>
+
+{% endblock body %}

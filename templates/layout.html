@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Blog</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="">
+        <script src="https://cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script> <!--CkEditor-->
+    </head>
+    <body >
+
+    {% include "includes/navbar.html" %} <!--navbarı ekliyor-->
+                 <br><br><br>
+        <div class="container">
+        {% include "includes/message.html" %}
+         {% block body %}
+        
+         {% endblock body %}
+        
+        
+        </div>
+    
+    
+           <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="https://cdn.ckeditor.com/4.8.0/standard/ckeditor.js"></script>
+        <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+        <script src="" async defer></script>
+          
+        
+                 <script>
+                        CKEDITOR.replace( 'content' ,{allowedContent:true}); 
+                </script><!-- content olarak yaptığımızda form.content atanıyor-->
+       <br>
+    </body>
+   <!--   % include "includes/footer.html" %}-->
+</html>
